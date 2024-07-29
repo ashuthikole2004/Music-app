@@ -82,10 +82,12 @@ form {
 .button-container {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
-.play-button, .stop-button, .download-button {
-    margin: 10px 0;
+.play-button,
+.stop-button,
+.download-button {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -93,7 +95,7 @@ form {
     color: #fff;
     cursor: pointer;
     outline: none;
-    width: 40%;
+    flex: 1;
 }
 
 .play-button {
@@ -109,31 +111,30 @@ form {
 }
 
 .stop-button {
-    background-color: #f44336;
+    background-color: #06f92a;
     color: black;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .stop-button:hover {
-    background-color: #e53935;
+    background-color: #d0f407;
     color: black;
     font-family: 'Times New Roman', Times, serif;
-}
-
-.stop-button {
-    display: none;
 }
 
 .download-button {
-    background-color: rgb(243, 130, 18);
+    background-color: rgb(18, 176, 243);
     color: black;
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
+    background-color: #f36d45;
 }
 
 .download-button:hover {
-    background-color: #f46a01;
+    background-color: #0177f4;
     color: black;
+    background-color: #2c08f7;
+    color:white;
 }
 
 .show-more-div {
@@ -158,6 +159,52 @@ form {
 
 .show-more:hover {
     background-color: #0177f4;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.prev-button, .next-button {
+    color: rgb(221, 217, 217);
+    height: 45px;
+    width: 100px;
+    font-size: 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border: none;
+    background-color: rgb(18, 176, 243);
+    margin: 0 10px;
+}
+
+.prev-button:hover, .next-button:hover {
+    background-color: #0177f4;
+}
+
+.prev-button {
+    background-color: #ff5722;
+}
+
+.next-button {
+    background-color: #4caf50; 
+}
+
+.current-track-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    display: none; 
+}
+
+.current-track {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
